@@ -100,9 +100,6 @@
     <None Include="Resources\play.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\moon-4606246_640.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\error.png" />
   </ItemGroup>
   <ItemGroup>

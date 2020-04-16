@@ -1,13 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Media;
+using System.Windows.Forms;
 
 namespace SoundPlayWindows
 {
@@ -20,30 +13,20 @@ namespace SoundPlayWindows
 
         private void buttonPlay_Click(object sender, EventArgs e)
         {
-            /*  SoundPlayer saplay = new SoundPlayer(@"C:\Users\abdul\source\repos\SoundPlayWindows\bin\Debug\a.wav");
-              if (buttonPlay.Text=="Play")
-              {
-                  buttonPlay.Text = "Stop";
-                  saplay.Play();
-              }
-              else
-              {
-                  buttonPlay.Text = "Play";
-                  saplay.Stop();
-              }
-              */
             musicPlay(@"C:\Users\abdul\source\repos\SoundPlayWindows\bin\Debug\a.wav");
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-      //Method to Play music, just pass a string from where to play
+
+        //Method to Play music, just pass a string from where to play
+
         private void musicPlay(string a)
         {
             SoundPlayer saplay = new SoundPlayer(a);
