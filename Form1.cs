@@ -26,7 +26,6 @@ namespace SoundPlayWindows
         }
 
         //Method to Play music, just pass a string from where to play
-
         private void musicPlay(string a)
         {
             SoundPlayer saplay = new SoundPlayer(a);
