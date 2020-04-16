@@ -20,17 +20,19 @@ namespace SoundPlayWindows
 
         private void buttonPlay_Click(object sender, EventArgs e)
         {
-            SoundPlayer saplay = new SoundPlayer(@"C:\Users\abdul\source\repos\SoundPlayWindows\bin\Debug\a.wav");
-            if (buttonPlay.Text=="Play")
-            {
-                buttonPlay.Text = "Stop";
-                saplay.Play();
-            }
-            else
-            {
-                buttonPlay.Text = "Play";
-                saplay.Stop();
-            }
+            /*  SoundPlayer saplay = new SoundPlayer(@"C:\Users\abdul\source\repos\SoundPlayWindows\bin\Debug\a.wav");
+              if (buttonPlay.Text=="Play")
+              {
+                  buttonPlay.Text = "Stop";
+                  saplay.Play();
+              }
+              else
+              {
+                  buttonPlay.Text = "Play";
+                  saplay.Stop();
+              }
+              */
+            musicPlay(@"C:\Users\abdul\source\repos\SoundPlayWindows\bin\Debug\a.wav");
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -40,6 +42,21 @@ namespace SoundPlayWindows
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+      //Method to Play music, just pass a string from where to play
+        private void musicPlay(string a)
+        {
+            SoundPlayer saplay = new SoundPlayer(a);
+            if (buttonPlay.Text == "Play")
+            {
+                buttonPlay.Text = "Stop";
+                saplay.Play();
+            }
+            else
+            {
+                buttonPlay.Text = "Play";
+                saplay.Stop();
+            }
         }
     }
 }
